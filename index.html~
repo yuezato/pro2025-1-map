@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>学会アクセスマップ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1em;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>学会アクセスマップ</h1>
+  <div class="gallery">
+    <img src="images/map1.jpg" alt="会場地図1">
+    <img src="images/map2.jpg" alt="会場地図2">
+  </div>
+</body>
+</html>
