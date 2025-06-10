@@ -87,16 +87,3 @@ strong {
   font-weight: bold;
 }
 
-.lb-outerContainer {
-  /* ポップアップされるボックス全体の最大幅を指定 */
-  max-width: 77vw !important;
-  height: auto !important;
-}
-
-.lightbox .lb-image {
-  /* 画像の幅を上記のボックスに合わせる */
-  width: 100% !important;
-  /* 高さは自動で調整（アスペクト比を維持）*/
-  height: auto !important;
-}
-
