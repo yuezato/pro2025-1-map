@@ -9,12 +9,24 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
   </head>
 
+  <script>
+  lightbox.option({
+    'resizeDuration': 200,
+    'fadeDuration': 200,
+    'imageFadeDuration': 200,
+    'wrapAround': true,
+    'disableScrolling': false,
+    'albumLabel': "画像 %1 / %2",
+    'alwaysShowNavOnTouchDevices': true
+  });
+  </script>
+  
   <body>
     <h1>学会アクセスマップ</h1>
     
     <h2>ひとまずのゴール 17F の様子</h2>
     <div class="gallery single">
-      <a href="images/17F.jpg" data-lightbox="17F">
+      <a href="images/17F.jpg" data-lightbox="single-17F">
 	<img src="images/17F.jpg" alt="17F の様子">
       </a>
     </div>
