@@ -73,3 +73,16 @@ h2 {
     width: 100%;
   }
 }
+
+.text-large {
+  font-size: 1.2em;
+}
+
+.text-xlarge {
+  font-size: 1.4em;
+}
+
+strong {
+  color: #c00; /* 赤色にすることで、より注意を引く */
+  font-weight: bold;
+}
