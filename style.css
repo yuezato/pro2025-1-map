@@ -23,9 +23,13 @@ h2 {
   margin-top: 1em;
 }
 
-.gallery img {
+.gallery a {
   width: calc(25% - 1em);
-  max-width: 100%;
+  display: block;
+}
+
+.gallery img {
+  width: 100%;
   height: auto;
   border: 1px solid #ccc;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
@@ -36,9 +40,14 @@ h2 {
   justify-content: center;
 }
 
+.gallery.single a {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+}
+
 .gallery.single img {
   width: 100%;
-  max-width: 600px;
   height: auto;
   border: 1px solid #ccc;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
