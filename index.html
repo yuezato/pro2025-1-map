@@ -8,45 +8,149 @@
   </head>
   
   <body>
-    <h1>スクランブルスクエア「オフィスビル」へのアクセス手助け情報集</h1>
+    <h1>第154回プログラミング研究発表会PROの会場への案内</h1>
 
     <p class="text-large">
+      サイバーエージェントの上里です。会場への道案内を作成したので、助けになれば幸いです。<br/>
+      上里は、"IPSJ PRO" の Slack に "Yuya Uezato" のネームで常にいますので、<br/>
+      何かあれば（道に迷った・遅れて到着したので対応してほしい等） DM などですぐにご連絡ください！
+      <br/>
+      <br/>
+      
       <a href="https://sigpro.ipsj.or.jp/pro2025-1/" target="_blank">今回のPRO</a> の会場は、
-      スクランブルスクエア<strong>「オフィスビル」</strong>の<strong>「21F」</strong>です。<br>
-      <strong>「17F」</strong>にあるロビーフロアにて、簡単な本人確認のあと <br>
-      ゲストカードをお渡しして 21F へご案内しますので、<strong>まずは「17F」を目指し</strong>ましょう！
-    </p>
-    
+      <a href="https://shibuya-scramble-square-office.com/access/" target="_blank">
+	スクランブルスクエア<strong>「オフィスビル」</strong>
+      </a>
+      の<strong>「21F」</strong>です。<br/>
 
-    <h2>オススメ の 公式提供アクセス情報</h2>
-    <ul>
-      <li>
-        <a href="https://shibuya-scramble-square-office.com/access/" target="_blank" class="text-xlarge">
-          オフィスビルへの分かりやすいアクセス情報①‼️</a>
-      </li>
-      <li>
-        <p>
-          利用路線ごとの「改札を出てからの流れ」があるので、<span class="text-xlarge">まずはこれ☝️に目を通して</span>ください。<br>
-          そもそも「どの改札から出たら良いの？」については、次のリンクならびに、このページの下にある動画を参考にしてください。<br><br>
-          また、リンク先には「受付」や「ICカード発行による入館」が記載されていますが、今回はそれと異なる方法を取るので、気にしないでください。
-        </p>
-      </li>
-      <li>
-        <a href="https://shibuya-qws.com/about/outline" target="_blank" class="text-xlarge">
-          オフィスビルへの分かりやすいアクセス情報②‼️</a>
-      </li>
-      <li>
-        <p>
-          ①の方が情報は豊富ですが、オススメ改札情報と、角度の違う写真があるので一応ご紹介。<br>
-          このリンクは15FのQWSをゴールにしていますが、PRO参加者は<span class="text-large"><strong>「17F」</strong></span>を目指してください。
-        </p>
-      </li>
-    </ul>
+      ただし、21Fへ進むには「ゲストカード」が必要になります。<br/>
+
+      そこで、<strong>「17F」</strong>のロビーフロアにおいて、
+      身分証を拝見して簡単な本人確認を実施後にゲストカードをお渡しします。 <br/>
+
+      ですので、<strong>まずは「17F」を目指し</strong>ましょう！
+
+      会場までの流れをまとめると次のようになります。
+    </p>
+
+    <h2>会場までの流れ</h2>
+    <div class="flow-diagram-line">
+        <div class="flow-step-line">渋谷駅 各路線のビル最寄り改札</div>
+
+	<div class="flow-arrow-line">
+	  <span class="arrow-label" style="top: 0.5em;">
+	    各改札からは <br/>
+	    <a href="#ticket-gate-to-entrance">エントランスへの動線動画</a> <br/>
+	    を要参考
+	  </span>
+	</div>
+
+	<!-- <div class="flow-arrow-line" data-label="アクセス情報①を要参考"></div> -->
+
+        <div class="flow-step-line">オフィスビル <br/> 2F または B2F エントランス</div>
+
+        <div class="flow-arrow-line">
+	  <span class="arrow-label">エレベーター</span>
+	</div>
+
+        <div class="flow-step-line">17Fロビー</div>
+
+        <div class="flow-arrow-line">
+	  <span class="arrow-label">本人確認</span>
+	</div>
+
+        <div class="flow-step-line">21F会場</div>
+    </div>
 
     <h2>重要注意事項⚠️</h2>
-    <p>スクランブルスクエアには、お店が入っていてお買い物ができる商業施設ビル（フロア）もありますが <br>
+    <p class="text-large">スクランブルスクエアには、お店が入っていてお買い物ができる商業施設ビル（フロア）もありますが <br>
       今回は<strong>「オフィスビル」</strong>の方を目指してください。<br>
       隣接する２つの棟なのですが、入口が異なるというイメージです。</p>
+    
+    <h2 id="ticket-gate-to-entrance">各路線ごとのビル最寄り改札 と そこからエントランスへの動線</h2>
+    <p class="text-large">
+      <a href="https://shibuya-scramble-square-office.com/access/" target="_blank" class="text-xlarge">
+	オフィスビル提供のアクセス情報️</a> をもとに作ったテーブルです。
+    </p>
+    
+    <style>
+      .route-table {
+	  width: 90%;
+	  border-collapse: collapse; /* ボーダーを重ねる */
+	  margin-top: 1.5em;
+	  margin-bottom: 1.5em;
+	  font-size: 16px;
+	  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+      .route-table th,
+      .route-table td {
+	  border: 1px solid #ddd;
+	  padding: 12px 15px; /* セル内の余白 */
+	  text-align: left;
+	  vertical-align: middle;
+      }
+      .route-table thead th {
+	  background-color: #f2f2f2; /* ヘッダーの背景色 */
+	  font-weight: bold;
+	  color: #333;
+      }
+      .route-table tbody tr:nth-child(even) {
+	  background-color: #f9f9f9; /* 偶数行の背景色 */
+      }
+      .route-table tbody tr:hover {
+	  background-color: #f5f5f5; /* カーソルを合わせた行の背景色 */
+      }
+      .route-table td:first-child {
+	  font-weight: bold;
+	  white-space: nowrap; /* 路線名が改行しないようにする */
+      }
+    </style>
+    
+    <table class="route-table">
+      <thead>
+	<tr>
+	  <th>路線名</th>
+	  <th>最寄り改札</th>
+	  <th>改札からエントランスへの参考動画(YouTube)</th>
+	</tr>
+      </thead>
+      <tbody>
+	<tr>
+	  <td>JR線</td>
+	  <td>JR中央改札あるいはJR南改札から</td>
+	  <td>
+	    <a href="https://youtu.be/y6SPKRlCgVc" target="_blank">中央改札からのアクセス</a><br/>
+	    <a href="https://youtu.be/ny_V_rUA__E" target="_blank">南改札からのアクセス</a><br/>
+	  </td>
+	</tr>
+	<tr>
+	  <td>銀座線</td>
+	  <td>スクランブルスクエア方面改札を出て、左手へ進む</td>
+	  <td><a href="https://youtu.be/m9OkWQXkE10" target="_blank">スクランブルスクエア改札からの様子</a></td>
+	</tr>
+	<tr>
+	  <td>井の頭線</td>
+	  <td>改札を出て「渋谷ヒカリエ方面」という案内矢印に従って進む<br/>井の頭線からは少し遠いです。</td>
+	  <td>
+	    <a href="https://youtu.be/cy-Mzpk7Ebo?si=WTIsYwjFbhN_ixDV" target="_blank">井の頭線からのアクセス</a><br/>
+	    この動画は商業施設フロアへ向かっていますが <br/>
+	    実際にはオフィスフロアを目指してください。
+	  </td>
+	</tr>
+	<tr>
+	  <td>東横線・副都心線</td>
+	  <td>渋谷ヒカリエ1改札を出て右手へ。またはヒカリエ2改札を出て左手へ</td>
+	  <td><a href="https://youtu.be/DaoLwklGsCQ" target="_blank">ヒカリエ2改札からのアクセス</a></td>
+	</tr>
+	<tr>
+	  <td>田園都市線・半蔵門線</td>
+	  <td>宮益坂中央改札から左手へ。
+	    または渋谷ヒカリエ1改札を出て、右手へ。
+	  </td>
+	  <td><a href="https://youtu.be/SxwHUZt5XWw" target="_blank">宮益坂中央改札からのアクセス</a></td>
+	</tr>
+      </tbody>
+    </table>
 
     <h2>ゴール 17F の様子</h2>
     <div class="gallery single">
@@ -54,11 +158,13 @@
         <img src="images/17F.jpg" alt="17F の様子">
       </a>
     </div>
-    <p>17Fから先の発表会場へはガイドがご案内します。<br>
-      17Fへ向かうには「2Fから入ってエレベーターを使う」または「B2Fから入ってエレベーターを使う」ことになります。
+    <p class="text-large">
+      17Fに到着したら、PRO参加者用の受付デスクなど、分かりやすい目印を出すようにするので、迷わないと思います。<br/>
+      上里 と サイバーエージェント社員の二人で、本人確認とゲストカードの手渡しを実施します。<br/>
+      （時間帯によっては対応人数が一人になります）
     </p>
     
-    <h2>2F 入口の様子</h2>
+    <h2>2F エントランスの様子</h2>
     <div class="gallery">
       <a href="images/2F_entrance_1.jpg" data-fancybox="2F">
         <img src="images/2F_entrance_1.jpg" alt="2F 入口 1">
@@ -77,7 +183,7 @@
       </a>
     </div>
     
-    <h2>B2F 入口の様子</h2>
+    <h2>B2F エントランスの様子</h2>
     <div class="gallery">
       <a href="images/B2F_entrance_1.jpg" data-fancybox="B2F">
         <img src="images/B2F_entrance_1.jpg" alt="B2F 入口 1">
@@ -93,43 +199,8 @@
       </a>
     </div>
     
-    <h2>🚃各路線での改札案内（と商業施設フロアへのアクセス）</h2>
-
-    <h3>JR線</h3>
-    <ul>
-      <li>JR中央改札（中央東）あるいはJR南改札から東口方面へ</li>
-      <li><a href="https://youtu.be/5dgxT6gC_m8?si=PjXwz3fcPqm5en-n" target="_blank">YouTube動画: JR中央改札経由アクセス</a></li>
-    </ul>
-
-    <h3>銀座線</h3>
-    <ul>
-      <li>スクランブルスクエア方面改札を出て、左手へ進む</li>
-      <li><a href="https://youtu.be/_F5wPKd-0_Q?si=5c57wJPiytQDE5yN" target="_blank">YouTube動画: スクランブルスクエア方面改札からのアクセス</a></li>      
-    </ul>
-
-    <h3>井の頭線</h3>
-    <ul>
-      <li>改札を出て「渋谷ヒカリエ方面」という案内矢印に従って進んでください（井の頭線からは少し遠いです）</li>
-      <li><a href="https://youtu.be/cy-Mzpk7Ebo?si=WTIsYwjFbhN_ixDV" target="_blank">YouTube動画: 井の頭線からのアクセス</a></li>
-    </ul>
-
-    <h3>東横線・副都心線</h3>
-    <ul>
-      <li>渋谷ヒカリエ1改札を出て、右手に進んでください。または、渋谷ヒカリエ2改札を出て左手へ。</li>
-      <li>渋谷ヒカリエ1改札がオススメです。</li>
-      <li><a href="https://youtu.be/UZqbxlaMr9I?si=tlBMOnpEVfW0zczK" target="_blank">YouTube動画: ヒカリエ１改札経由でのアクセス</a></li>
-    </ul>
-
-    <h3>田園都市線・半蔵門線</h3>
-    <ul>
-      <li>こちらも渋谷ヒカリエ1改札がオススメです。宮益坂中央改札を出て、左手へ進んでも行けるようです。</li>
-      <li><a href="https://youtu.be/fpL_kjNDL5k?si=6h5SnZi8AL3mA-Vh4" target="_blank">YouTube動画: ヒカリエ1改札経由でのアクセス</a></li>
-    </ul>
-    
-    <h3>注意！⚠️</h3>
-    <p>
-      動画は商業施設フロアまでの道のりですが、オフィスビルもすぐ近くにあります。<br>
-      <span class="text-large">改札を出るまでを参考にしてもらい、改札を出てからは「アクセス情報①」を頼りにしてください。</span><br><br>
+    <h2>商業フロア付近で迷ったら</h2>
+    <p class="text-large">
       商業フロアのインフォメーションデスクに訪ねてもらうのも一つの手です。<br>
       あるいは、以下のような オフィスビル の案内板を頼りにしてください。
     </p>

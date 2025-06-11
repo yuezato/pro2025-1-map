@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
   margin: 2em;
@@ -87,3 +91,67 @@ strong {
   font-weight: bold;
 }
 
+
+/* フロー全体のコンテナ */
+.flow-diagram-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-family: sans-serif;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* 各ステップの箱 */
+.flow-step-line {
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* 矢印のコンテナ */
+.flow-arrow-line {
+    flex-grow: 1;
+    position: relative; /* ラベルを配置する基準 */
+    height: 2px;
+    background-color: #555;
+    min-width: 50px;
+    margin: 0 0.5em;
+}
+
+/* 矢印の先端部分 (三角形) */
+.flow-arrow-line::after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: -4px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #555;
+}
+
+/* ★★★ ここからが修正箇所 ★★★ */
+/* 矢印の上のラベル（以前の ::before指定から変更）*/
+.arrow-label {
+    display: block;
+    position: absolute;
+    top: -.4em;
+    left: 50%;
+    transform: translate(-50%, -100%); /* 位置を微調整 */
+    background-color: transparent;
+    /* background-color: #fff; */
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #c0392b;
+    white-space: nowrap;
+    text-align: center;
+}
